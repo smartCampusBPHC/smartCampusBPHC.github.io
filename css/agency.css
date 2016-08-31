@@ -29,6 +29,7 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 100%;
 }
 
 .page-scroll {
@@ -82,7 +83,7 @@ h6 {
     font-weight: 700
 }
 
-.img-centered {
+.centered {
     margin: 0 auto
 }
 
@@ -253,7 +254,8 @@ fieldset[disabled] .btn-xl.active {
     letter-spacing: 1px;
     text-shadow: 0px 1px 1px #4d4d4d;
     border: 3px solid #fed136;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    padding-top: 15px;
 }
 
 .intro-heading {
@@ -370,6 +372,31 @@ header .intro-text .intro-heading {
     font-size: 50px;
     line-height: 50px;
     margin-bottom: 25px
+}
+
+.left {
+    opacity: 1;
+    transition: all 0.8s;
+}
+
+.right {
+    opacity: 1;
+    transition: all 0.8s;
+}
+
+.center {
+    opacity: 1;
+    transition: all 0.8s;
+}
+
+.timeline-left {
+    transition: all 0.6s;
+    opacity: 1;
+}
+
+.timeline-right {
+    transition: all 0.6s;
+    opacity: 1;
 }
 
 @media (min-width:768px) {
@@ -558,7 +585,6 @@ section h3.section-subheading {
 
 .timeline>li .timeline-image {
     left: 0;
-    margin-left: 0;
     width: 80px;
     height: 80px;
     position: absolute;
@@ -568,7 +594,7 @@ section h3.section-subheading {
     border-radius: 100%;
     border: 7px solid #f1f1f1;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.6s;
 }
 
@@ -623,6 +649,36 @@ section h3.section-subheading {
     }
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 20px 20px
+    }
+    .left {
+        opacity: 0;
+        transition: all 0.8s;
+        left: -200px;
+    }
+    .right {
+        opacity: 0;
+        transition: all 0.8s;
+        transform: translateX(200px);
+    }
+    .center {
+        opacity: 0;
+        transition: all 0.8s;
+    }
+    .timeline-left {
+        transform: translateX(150px);
+        transition: all 0.6s;
+        opacity: 0;
+    }
+    .timeline-right {
+        transform: translateX(-150px);
+        transition: all 0.6s;
+        opacity: 0;
+    }
+    .timeline>li .timeline-image {
+        opacity: 0;
+        width: 170px;
+        height: 170px;
+        margin-left: -85px
     }
 }
 
@@ -787,84 +843,6 @@ ul.social-buttons li a:active {
     outline: 0
 }
 
-.portfolio-modal .modal-content {
-    border-radius: 0;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 0;
-    min-height: 100%;
-    width: 70%;
-    margin-left: 15%;
-    padding: 100px 0;
-    text-align: center
-}
-
-.portfolio-modal .modal-content h2 {
-    margin-bottom: 15px;
-    font-size: 3em
-}
-
-.portfolio-modal .modal-content p {
-    margin-bottom: 30px
-}
-
-.portfolio-modal .modal-content p.item-intro {
-    margin: 20px 0 30px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 16px
-}
-
-.portfolio-modal .modal-content ul.list-inline {
-    margin-bottom: 30px;
-    margin-top: 0
-}
-
-.portfolio-modal .modal-content img {
-    margin-bottom: 30px
-}
-
-.portfolio-modal .close-modal {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    top: 25px;
-    right: 25px;
-    cursor: pointer
-}
-
-.portfolio-modal .close-modal:hover {
-    opacity: .3
-}
-
-.portfolio-modal .close-modal .lr {
-    height: 75px;
-    width: 1px;
-    margin-left: 35px;
-    background-color: #222;
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    z-index: 1051
-}
-
-.portfolio-modal .close-modal .lr .rl {
-    height: 75px;
-    width: 1px;
-    background-color: #222;
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    z-index: 1052
-}
-
-.portfolio-modal .modal -backdrop {
-    opacity: 0;
-    display: none
-}
-
 ::-moz-selection {
     text-shadow: none;
     background: #fed136
@@ -925,37 +903,17 @@ body {
     box-shadow: inset 100px 100px 100px #000000;
 }
 
-.left {
-    opacity: 0;
-    transition: all 0.8s;
-    left: -200px;
+.img-centered {
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.right {
-    opacity: 0;
-    transition: all 0.8s;
-    transform: translateX(200px);
-}
-
-.center {
-    opacity: 0;
-    transition: all 0.8s;
-}
-
-.timeline-left {
-    transform: translateX(150px);
-    transition: all 0.6s;
-    opacity: 0;
-}
-
-.timeline-right {
-    transform: translateX(-150px);
-    transition: all 0.6s;
-    opacity: 0;
-}
-
-.portfolio-modal {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    overflow: scroll;
+.modal-content {
+    padding: 20px;
+    text-align: center;
+    overflow-x: scroll;
 }

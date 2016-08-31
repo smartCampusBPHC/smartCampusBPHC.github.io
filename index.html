@@ -14,16 +14,12 @@
     <link href="css/agency.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
-    <link href="_css/Icomoon/style.css" rel="stylesheet" type="text/css" />
-    <link href="_css/main.css" rel="stylesheet" type="text/css" />
+    
+    <link href="css/Icomoon/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/preloader.css">
-    <script type="text/javascript" src="_scripts/jquery-2.0.2.min.js"></script>
-    <script type="text/javascript" src="_scripts/main.js"></script>
+    <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+   
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,7 +28,7 @@
     <![endif]-->
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" style="width:100%">
     <!-- Navigation -->
     <div id="loading">
         <div id="loading-center">
@@ -49,23 +45,22 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" style="width:100%">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top" style="font-size:30px">SmartCampus@BPHC</a>
+                <a class="navbar-brand page-scroll" href="#page-top" style="font-size:30px">SmartCampus</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden
-">
+                    <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
@@ -93,7 +88,7 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- Header -->
-    <header>
+    <header style="width:100%; overflow-x:hidden">
         <div class="container">
             <div class="intro-text">
                 <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
@@ -304,12 +299,12 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Our Amazing Team</h2>
-                    <hr class="underline" style="width:500px">
+                    <hr class="underline" style="width:200px">
                     <h3 class="section-subheading text-muted">People you may want to contact</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-xs-6 col-sm-4 col-lg-offset-1 col-lg-2">
                     <div class="team-member">
                         <img src="img/team/1.jpg" class="img-responsive img-circle team-member-image" alt="">
                         <h4>Dhariya Gandhi</h4>
@@ -322,7 +317,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-xs-6 col-sm-4 col-lg-2">
                     <div class="team-member">
                         <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
                         <h4>Sagar Gupta</h4>
@@ -335,7 +330,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-xs-6 col-sm-4 col-lg-2">
                     <div class="team-member">
                         <img src="img/team/5.jpg" class="img-responsive img-circle" alt="">
                         <h4>Ayush Yadav</h4>
@@ -348,7 +343,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-xs-6 col-sm-4 col-lg-2">
                     <div class="team-member">
                         <img src="img/team/4.jpg" class="img-responsive img-circle" alt="">
                         <h4>Ayush Jain</h4>
@@ -363,7 +358,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-xs-6 col-xs-offset-3  col-sm-4  col-sm-offset-0 col-lg-2 col-lg-offset-0">
                     <div class="team-member">
                         <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
                         <h4>Meghana Kumar</h4>
@@ -431,166 +426,112 @@
             </div>
         </div>
     </section>
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/bits-tagline.png" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
     <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+    <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2 style="font-size:5vmin">Asynchronous Notifications </h2>
-                            <p class="item-intro text-muted"></p>
-                            <img class="img-responsive img-centered" src="img/portfolio/textile-rfid-news.jpg" alt="">
-                            <p>The laundry system is based on the idea of automating the orders given to the laundry person so as to create a database of all the customers along with all the details of the order. The RFID tags would be read and written on to make sure clothes aren’t misplaced or lost in the whole transaction. The notification system is built such that constant internet isn’t required for it to function, rather asynchronously deliver the messages to the patrons once connectivity is available even for a small duration. Since wait time in this system is in the order of days, this kind of notification system is viable. It would make trips to the store far less infrequent making the life of the customers and the man working the store easier. </p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
+                <div class="modal-body">
+                    <h2 style="font-size:5vmin">Asynchronous Notifications </h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-responsive img-centered" src="img/portfolio/textile-rfid-news.jpg" alt="">
+                    <p>The laundry system is based on the idea of automating the orders given to the laundry person so as to create a database of all the customers along with all the details of the order. The RFID tags would be read and written on to make sure clothes aren’t misplaced or lost in the whole transaction. The notification system is built such that constant internet isn’t required for it to function, rather asynchronously deliver the messages to the patrons once connectivity is available even for a small duration. Since wait time in this system is in the order of days, this kind of notification system is viable. It would make trips to the store far less infrequent making the life of the customers and the man working the store easier. </p>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+    <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Notification System in Restraunts</h2>
-                            <p class="item-intro text-muted"></p>
-                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                            <p>​ Restaurants in small communities can often be crowded and demand for time to stand in long queues. Especially on campus, the mess workers usually shout out the token numbers as and when they are ready, and in an already noisy environment, it is hard for the customer to figure out whether the order is ready or not.</p>
-                            <p>​ In the All Night Canteen of our campus, an order is placed and the student waits it out. In the meantime, we have set ​ up a local server on a Raspberry PI in our canteen. We created a web user interface hosted on the server for the canteen workers on which they can enter the ready order token numbers and those numbers would be displayed on a LED screen visible to everyone in canteen. Now, the workers did not have to shout. But we wanted to make life of students easier. We analyzed the situation and came to the conclusion that a notification app to notify the students for their ready orders would do the work. The first problem that we faced was that people uses all the three operating systems (iOS, Android and Windows). So we needed to come to a common platform that could be accessed from all the above OS. We searched and came across a messaging app called ​ Telegram ​ . Here we can create bots and code (in Python) which would create an interface between the user and the bot. We coded a channel on which if a student sends his/her token number as a message, the token number gets registered. And when the worker enters that particular number in his interface, a message is sent to the student who registered the token thereby notifying him/her that the order is ready. Now students can have a peaceful discussion with their friends while enjoying their meals.
-                            </p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
+                <div class="modal-body">
+                    <h2>Notification System in Restraunts</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-responsive img-centered" src="img/portfolio/textile-rfid-news.jpg" alt="">
+                    <p>​ Restaurants in small communities can often be crowded and demand for time to stand in long queues. Especially on campus, the mess workers usually shout out the token numbers as and when they are ready, and in an already noisy environment, it is hard for the customer to figure out whether the order is ready or not.</p>
+                    <p>​ In the All Night Canteen of our campus, an order is placed and the student waits it out. In the meantime, we have set ​ up a local server on a Raspberry PI in our canteen. We created a web user interface hosted on the server for the canteen workers on which they can enter the ready order token numbers and those numbers would be displayed on a LED screen visible to everyone in canteen. Now, the workers did not have to shout. But we wanted to make life of students easier. We analyzed the situation and came to the conclusion that a notification app to notify the students for their ready orders would do the work. The first problem that we faced was that people uses all the three operating systems (iOS, Android and Windows). So we needed to come to a common platform that could be accessed from all the above OS. We searched and came across a messaging app called ​ Telegram ​ . Here we can create bots and code (in Python) which would create an interface between the user and the bot. We coded a channel on which if a student sends his/her token number as a message, the token number gets registered. And when the worker enters that particular number in his interface, a message is sent to the student who registered the token thereby notifying him/her that the order is ready. Now students can have a peaceful discussion with their friends while enjoying their meals.
+                    </p>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+    <div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Real Time Status Update</h2>
-                            <p class="item-intro text-muted"></p>
-                            <img class="img-responsive img-centered" src="img/portfolio/_70392498_paris-closed-shop_reutersne.jpg" alt="">
-                            <p>Going to the marketplace to go to a specific shop is a habit that most people knowingly or unknowingly follow. However, every so often it happens that the shop in question ends up being closed even during midday for unpredictable reasons. A real time status update of the shop telling one whether it is open or closed would solve this solution and would work seamlessly with other solutions offered by SmartCampus to help save valuable time on the customers’ end. A small sensor close to the shutter is all that is needed, out of sight from the shopkeeper and the customers so that even the aesthetics of the shop are maintained. An automatic open/close sign too can be implemented parallel with this system.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
+                <div class="modal-body">
+                    <h2>Real Time Status Update</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-responsive img-centered" src="img/portfolio/_70392498_paris-closed-shop_reutersne.jpg" alt="">
+                    <p>Going to the marketplace to go to a specific shop is a habit that most people knowingly or unknowingly follow. However, every so often it happens that the shop in question ends up being closed even during midday for unpredictable reasons. A real time status update of the shop telling one whether it is open or closed would solve this solution and would work seamlessly with other solutions offered by SmartCampus to help save valuable time on the customers’ end. A small sensor close to the shutter is all that is needed, out of sight from the shopkeeper and the customers so that even the aesthetics of the shop are maintained. An automatic open/close sign too can be implemented parallel with this system.</p>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+    <div class="modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted"></p>
-                            <img class="img-responsive img-centered" src="img/portfolio/unnamed.jpg" alt="">
-                            <p>Living in a city means that local transport comes in the form of rickshaws and autos and the like for a majority of the population, however finding one can take a long time as one has to walk to or wait for on to arrive. This is highly inefficient. To tackle this problem, we have a system that will notify autos nearby the patron once s/he asks for one. It would broadcast their location and the autorickshaw person with the bot in his phone can notify other drivers in his vicinity. Only if the request is not completed, will all drivers get the notification and can thus act on it. The interface will be very simple and clean so that autodrivers don’t have to worry about deciphering the information but can simply act on it the first time.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
+                <div class="modal-body">
+                    <h2>Project Name</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-responsive img-centered" src="img/portfolio/unnamed.jpg" alt="">
+                    <p>Living in a city means that local transport comes in the form of rickshaws and autos and the like for a majority of the population, however finding one can take a long time as one has to walk to or wait for on to arrive. This is highly inefficient. To tackle this problem, we have a system that will notify autos nearby the patron once s/he asks for one. It would broadcast their location and the autorickshaw person with the bot in his phone can notify other drivers in his vicinity. Only if the request is not completed, will all drivers get the notification and can thus act on it. The interface will be very simple and clean so that autodrivers don’t have to worry about deciphering the information but can simply act on it the first time.</p>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+    <div class="modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Crowd communicating</h2>
-                            <p class="item-intro text-muted"></p>
-                            <img class="img-responsive img-centered" src="img/portfolio/CCTV-camera-e1457617446948.jpg" alt="">
-                            <p>Restaurants and salons generally have a limited number of spaces for people. This means that in the case of a large crowd, people have to spend a lot of time waiting for a place. This is partially solved by taking bookings but for that people have to make plans well in advance and that is not always possible. We plan to have sensors in the premises that would monitor the place for activity and count the number of people against the number of available places to approximate how much time will be needed to be served once you are already at the place. This will be done in real time without any inputs from the restaurants side. This would avoid lines and give people a decided benefit when trying to decide on their options.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
+                <div class="modal-body">
+                    <h2>Crowd communicating</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-responsive img-centered" src="img/portfolio/CCTV-camera-e1457617446948.jpg" alt="">
+                    <p>Restaurants and salons generally have a limited number of spaces for people. This means that in the case of a large crowd, people have to spend a lot of time waiting for a place. This is partially solved by taking bookings but for that people have to make plans well in advance and that is not always possible. We plan to have sensors in the premises that would monitor the place for activity and count the number of people against the number of available places to approximate how much time will be needed to be served once you are already at the place. This will be done in real time without any inputs from the restaurants side. This would avoid lines and give people a decided benefit when trying to decide on their options.</p>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+    <div class="modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Public Transport</h2>
-                            <p class="item-intro text-muted"></p>
-                            <img class="img-responsive img-centered" src="img/portfolio/Waterproof-Car-GPS-Tracker-TK104-GPS-Locator-Live-Tracking-System_3304153_e.JPG" alt="">
-                            <p>Notifications(for the 6 one) Local buses often run at highly indeterminate schedules and can be of major hassle when one is in a hurry. To combat this, we propose a system that would track every bus and would send estimate time to reach the bus stop closest to you. In addition it would also allow one to know what buses one needs to take to reach his/her destination. Customers can make smarter decisions in this case by choosing to use alternate methods of transport if needed. This can be done by leveraging the smartphones that conductors/ drivers have with them and using GPS and data networks to update their location in a central database which will handle traffic of all buses and notify the users accordingly.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
+                <div class="modal-body">
+                    <h2>Public Transport</h2>
+                    <p class="item-intro text-muted"></p>
+                    <img class="img-responsive img-centered" src="img/portfolio/Waterproof-Car-GPS-Tracker-TK104-GPS-Locator-Live-Tracking-System_3304153_e.JPG" alt="">
+                    <p>Notifications(for the 6 one) Local buses often run at highly indeterminate schedules and can be of major hassle when one is in a hurry. To combat this, we propose a system that would track every bus and would send estimate time to reach the bus stop closest to you. In addition it would also allow one to know what buses one needs to take to reach his/her destination. Customers can make smarter decisions in this case by choosing to use alternate methods of transport if needed. This can be done by leveraging the smartphones that conductors/ drivers have with them and using GPS and data networks to update their location in a central database which will handle traffic of all buses and notify the users accordingly.</p>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
             </div>
         </div>
@@ -663,6 +604,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
     <script type="text/javascript" src="js/transitions.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 
 </html>
